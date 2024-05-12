@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    unicode-bidi: isolate;
+    
+}
+nav:first-child {
+    margin-right: auto;
+}
+nav:nth-child(2) {
+    margin-left: auto;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #222;
+}
+.navOpen {
+    display: none;
+}
+.navOpen:hover {
+    color: #222;
+}
+.nav-l {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.sideBar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(144, 140, 207, 0.542);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    
+    
+}
+.sideBar a {
+    transition: 0.3s;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+}
+nav img {
+    display: block;
+    position: relative;
+    border-radius: 100px;
+    width: 40px;
+}
+
+
+header {
+    margin: auto;
+    padding: 10px 30px;
+    background-color: rgb(145, 140, 207);
+    background-size: 100%;
+    background-position: 0% 35%;
+    background-repeat: repeat-x;
+    position: sticky;
+    display: block;
+    top: 0;
+    font-size: 1rem;
+    color: white;
+    z-index: 10;
+
+}
+.banner {
+    height: 250px;
+    max-width: 100%;
+    display: block;
+    position: relative;
+    background-image: url(asset/shirasu-azusa-in-classroom-blue-archive-thumb.jpg);
+    background-position: 50% 50%;
+    background-color: #010101;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gradient {
+    position: absolute;
+    display: block;
+    background-image: linear-gradient(#11111100, #111);
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 2;
+}
+
+main {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.countainer {
+    display: block;
+    unicode-bidi: isolate;
+}
+body {
+    font-size: 0.9rem;
+    min-height: 100vh;
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    background-color: rgb(174, 170, 221);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 1.4;
+    
+    
+}
+p {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.gambar {
+    width: 100%;
+    border-radius: 30px;
+    display: block;
+    margin: 0px auto 10px auto;
+}
+aside {
+    background-color: rgb(100, 94, 168);
+    border-radius: 20px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    font-size: 1rem;
+
+    
+}
+table {
+    padding: 10px 20px;
+}
+.gambar-aside {
+    width: 60px;
+    overflow-clip-margin: content-box;
+    border-radius: 15px;
+
+    
+}
+
+.td-awal {
+    padding-right: 20px;
+}
+.warna-td {
+    color: black;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(69, 65, 117);
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-gambar {
+    width: 80px;
+}
+.bio  {
+    width: 40px;
+    padding-bottom: 20px;
+}
+@media(max-width: 650px) {
+    .hideOnMobile{
+        display: none;
+    }
+    .hideOnDesktop{
+        display: flex;
+    }
+    
+}
+@media(min-width:650px) {
+    .gambar{
+        width: 70%;
+    }
+    body {
+        font-size: 1rem;
+    }
+}
+@media(min-width: 920px) {
+    body {
+    font-size: 1.1rem;
+    background-position: 250% 70%;
+    background-size: 80%;
+    }
+    .gambar {
+        width: 400px;
+    }
+    aside {
+        min-width: 25%;
+        position: sticky;
+    }
+    main {
+        padding: 20px 70px;
+        flex-direction: row;
+        gap: 50px;
+    }
+}
