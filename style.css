@@ -45,11 +45,12 @@ nav a:hover {
     backdrop-filter: blur(10px);
     z-index: 999;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    width: 0px;
     
     
 }
 .sideBar a {
-    transition: 0.3s;
+    /* transition: 0.3s; */
     text-decoration: none;
     color: white;
     display: block;
@@ -79,7 +80,7 @@ header {
     z-index: 10;
 
 }
-.banner {
+/* .banner {
     height: 250px;
     max-width: 100%;
     display: block;
@@ -98,7 +99,7 @@ header {
     height: 100px;
     width: 100%;
     z-index: 2;
-}
+} */
 
 main {
     display: flex;
@@ -113,14 +114,16 @@ main {
 body {
     font-size: 0.9rem;
     min-height: 100vh;
-    color: aliceblue;
+    color: black;
     padding: 0;
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: block;
     background-color: rgb(174, 170, 221);
+    background-image: url(asset/shirasu-azusa-in-classroom-blue-archive-thumb.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     line-height: 1.4;
     
@@ -135,6 +138,9 @@ p {
     border-radius: 30px;
     display: block;
     margin: 0px auto 10px auto;
+}
+.spoiler {
+    border: 2px solid black;
 }
 aside {
     background-color: rgb(100, 94, 168);
@@ -202,8 +208,8 @@ footer {
 @media(min-width: 920px) {
     body {
     font-size: 1.1rem;
-    background-position: 250% 70%;
-    background-size: 80%;
+    /* background-position: 250% 70%;
+    background-size: 80%; */
     }
     .gambar {
         width: 400px;
