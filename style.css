@@ -152,7 +152,7 @@ p {
     border-radius: 30px;
     display: block;
     margin: 0px auto 10px auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .spoiler {
     border: 2px solid black;
