@@ -2,6 +2,9 @@
     box-sizing: border-box;
     transition: 0.5s;
 }
+html {
+    scroll-behavior: smooth;
+}
 nav {
     display: flex;
     flex-direction: row;
@@ -141,11 +144,15 @@ p {
     text-align: justify;
     margin-bottom: 30px;
 }
+.sub{
+    border-bottom: 2px solid black;
+}
 .gambar {
     width: 100%;
     border-radius: 30px;
     display: block;
     margin: 0px auto 10px auto;
+    border: 1px solid black;
 }
 .spoiler {
     border: 2px solid black;
