@@ -112,11 +112,6 @@ main {
     display: block;
     unicode-bidi: isolate;
 }
-html {
-    background-color: red;
-    overflow: hidden;
-    width: 100%;
-  }
 body {
     font-size: 0.9rem;
     min-height: 100vh;
@@ -132,10 +127,15 @@ body {
     background-attachment: fixed;
     background-position: center;
     line-height: 1.4;
-    position: fixed;
-    overflow-y: scroll;
-    
-    
+}
+.wrapper {
+    position: absolute;
+    top: 0.5px;
+    left: 0;
+    right: 0;
+    bottom: 0.5px;
+    overflow-x: hidden; /* or any other value */
+    overflow-y: auto; /* or any other value */
 }
 p {
     text-align: justify;
