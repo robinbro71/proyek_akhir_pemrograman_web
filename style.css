@@ -54,8 +54,9 @@ nav a:hover {
     text-decoration: none;
     color: white;
     display: block;
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 30px;
     font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 nav img {
     display: block;
@@ -111,6 +112,11 @@ main {
     display: block;
     unicode-bidi: isolate;
 }
+html {
+    background-color: red;
+    overflow: hidden;
+    width: 100%;
+  }
 body {
     font-size: 0.9rem;
     min-height: 100vh;
@@ -126,6 +132,8 @@ body {
     background-attachment: fixed;
     background-position: center;
     line-height: 1.4;
+    position: fixed;
+    overflow-y: scroll;
     
     
 }
