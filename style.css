@@ -1,8 +1,6 @@
 *{
     box-sizing: border-box;
     transition: 0.5s;
-}
-html {
     scroll-behavior: smooth;
 }
 nav {
@@ -53,7 +51,6 @@ nav a:hover {
     
 }
 .sideBar a {
-    /* transition: 0.3s; */
     text-decoration: none;
     color: white;
     display: block;
@@ -84,30 +81,8 @@ header {
     z-index: 10;
 
 }
-/* .banner {
-    height: 250px;
-    max-width: 100%;
-    display: block;
-    position: relative;
-    background-image: url(asset/shirasu-azusa-in-classroom-blue-archive-thumb.jpg);
-    background-position: 50% 50%;
-    background-color: #010101;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.gradient {
-    position: absolute;
-    display: block;
-    background-image: linear-gradient(#11111100, #111);
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    z-index: 2;
-} */
-
 main {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     padding: 10px 20px;
 }
@@ -137,8 +112,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0.5px;
-    overflow-x: hidden; /* or any other value */
-    overflow-y: auto; /* or any other value */
+    overflow-x: hidden; 
+    overflow-y: auto; 
 }
 p {
     text-align: justify;
@@ -152,7 +127,6 @@ p {
     border-radius: 30px;
     display: block;
     margin: 0px auto 10px auto;
-    /* border: 1px solid black; */
 }
 .spoiler {
     border: 2px solid black;
@@ -220,11 +194,9 @@ footer {
         font-size: 1rem;
     }
 }
-@media(min-width: 920px) {
+@media(min-width: 900px) {
     body {
     font-size: 1.1rem;
-    /* background-position: 250% 70%;
-    background-size: 80%; */
     }
     .gambar {
         width: 400px;
@@ -237,5 +209,8 @@ footer {
         padding: 20px 70px;
         flex-direction: row;
         gap: 50px;
+    }
+    aside {
+        margin-top: 169px;
     }
 }
