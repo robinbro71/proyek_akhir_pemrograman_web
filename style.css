@@ -20,6 +20,7 @@ nav:nth-child(2) {
 nav a {
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 nav a:hover {
     color: #222;
